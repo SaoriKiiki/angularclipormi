@@ -2,8 +2,8 @@
 <ng-container *ngIf="!(location == '/auth/signup' || location == '/auth/signin' || location == '/auth/forgot-password' || location == '/others/error-404')">
       <app-top-nav></app-top-nav>
       <app-side-nav></app-side-nav>
-      <div>
-        
-        <app-footer></app-footer>
+      <div class="main-content d-flex flex-column hide-sidemenu">
+          <router-outlet></router-outlet>
+          <app-footer></app-footer>
       </div>
 </ng-container>
